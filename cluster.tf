@@ -62,7 +62,7 @@ resource "azurerm_kubernetes_cluster" "aks_cluster" {
   name                = "bookstore-cluster"
   location            = azurerm_resource_group.bsrsg.location
   resource_group_name = azurerm_resource_group.bsrsg.name
-  # dns_prefix          = "bsrsg-cluster"
+  dns_prefix          = "bsrsg-cluster"
 
   default_node_pool {
     name                 = "systempool"
